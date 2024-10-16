@@ -13,10 +13,12 @@ from .gradio import *
 from .code_interpreter import PythonCodeInterpreter
 from .file_operation import WriteFile, ReadFile
 from .duckduckgo import DuckDuckGo
+from .pdfreader import Document
 
 
 def load_tools(name: str) -> BaseTool:
     name2tool = {
+        "document_reader" : Document,
         "arxiv_search": ArxivSearch,
         "calculator": Calculator,
         "python_code_interpreter": PythonCodeInterpreter,

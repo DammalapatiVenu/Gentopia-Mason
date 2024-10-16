@@ -1,6 +1,7 @@
 # Listing available LLMs
 
 TYPES = {
+    "gpt-4o-mini": "OpenAI",
     "gpt-3.5-turbo": "OpenAI",
     'text-davinci-003': "OpenAI",
     "gpt-4": "OpenAI",
